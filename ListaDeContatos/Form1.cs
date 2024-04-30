@@ -16,5 +16,25 @@ namespace ListaDeContatos
         {
             InitializeComponent();
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void listBoxContatos_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void buttonIncluirContato_Click(object sender, EventArgs e)
+        {
+            Contato contato = new Contato();
+        }
     }
 }

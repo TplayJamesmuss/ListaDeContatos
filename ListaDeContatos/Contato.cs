@@ -70,6 +70,27 @@ namespace ListaDeContatos
         }
 
         //Sobrecarga do método construto.
-        public Contato (string nome)
+        public Contato(string nome, string sobrenome, string telefone)
+        {
+            Nome = nome;
+            Sobrenome = sobrenome;
+            Telefone = telefone;
+        }
+
+        //Construtor de classe.
+        //Todas as classes são filhas de object (Herança).
+        //"override" sobrescreve o método da classe pai (polimorfismo).
+        public override string ToString()
+        {
+            //Inicializa a variável como vazia.
+            string saida = string.Empty;
+            saida += String.Format("{0} {1}", Nome, Sobrenome);
+            saida += String.Format("({0}) {1}-{2}",
+                Telefone.Substring(0, 2), 
+                Telefone.Substring(3,5),
+                Telefone.Substring(7,4));
+
+            return saida;
+        }
     }
 }
